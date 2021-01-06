@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;     /*extra padding or margin we give to any element doesnot gets included with this width */
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  height:100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.1)), url('../images/taj1.jpg');   /*linear gradient is used to create a mixture of two colours and give it as an output*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* nav section */
+
+nav {
+  width: 100%;
+  height: 15vh;
+  display: flex; justify-content: space-between; /* This line makes MERA BHARAT stuck to left and the menu items to right */
+  align-items: center;  /* To vertically align the nav section */
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.logo {
+  width: 25%;
+  text-align: center;
+}
+
+.logo h1{
+  color: #fff;
+}
+
+.menu {
+  width: 40%;
+  display: flex;  justify-content: space-around;
+}
+
+.menu a{
+  width: 25%;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.menu a:first-of-type{
+  color: #00b894;
+}
+
+/* nav-section ends */
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;  justify-content: center;  align-items: center;    /*To center the content*/
+  text-align: center;
+  color: #fff;
+}
+
+section h3{
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p{
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+  padding-bottom: 25px;
+}
+
+section a{
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all .5s ease;   /*To provide smooth transition on buttons*/
+}
+
+section .btnone{
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover{
+  background: #00b894;
+  color:#fff;
+}
+
+section .btntwo{
+  background: #00b894;
+  color:#fff;
+}
+
+.btntwo:hover{
+  background: #fff;
+  color: #000;
+}
+
+.change_content:after{
+  content: '';
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext{
+  0%{content: "Darjeeling";}
+  15%{content: "Shimla";}
+  30%{content: "Mumbai";}
+  45%{content: "Delhi";}
+  60%{content: "Kerala";}
+  85%{content: "Rajasthan";}
+  99%{content: "Chennai";}
+}
